@@ -1,0 +1,153 @@
+{
+	"info": {
+		"_postman_id": "78d09cae-186d-43a3-bffc-3258f7defecf",
+		"name": "Productos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10585618",
+		"_collection_link": "https://warped-water-751824.postman.co/workspace/Test_Nequi~1492f27a-e4a0-4a7f-a050-2847fd236ecb/collection/10585618-78d09cae-186d-43a3-bffc-3258f7defecf?action=share&source=collection_link&creator=10585618"
+	},
+	"item": [
+		{
+			"name": "1. Obtener productos por id de sucursal ",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/productos/sucursal/66b78d36870466c4ab7a3906",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"productos",
+						"sucursal",
+						"66b78d36870466c4ab7a3906"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2. Obtener producto por Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/productos/66b78dbf2e3c20dd50a29b3d",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"productos",
+						"66b78dbf2e3c20dd50a29b3d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "3. Crear producto de una sucursal por id",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Pantalonetas\",\r\n    \"stock\": 15\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/productos/66b78d36870466c4ab7a3906",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"productos",
+						"66b78d36870466c4ab7a3906"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "4. Actualizar producto",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Chaqueta de cuero\",\r\n    \"stock\": 20\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/productos/66b78d36870466c4ab7a3906/66b78dbf2e3c20dd50a29b3d",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"productos",
+						"66b78d36870466c4ab7a3906",
+						"66b78dbf2e3c20dd50a29b3d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "5. Eliminar producto",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/productos/66b78d36870466c4ab7a3906/66b7c1665792bb437bd21bf5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"productos",
+						"66b78d36870466c4ab7a3906",
+						"66b7c1665792bb437bd21bf5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "6. Producto con mas stock",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/productos/mas-stock/66b78ca02d5c3d7771334037",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"productos",
+						"mas-stock",
+						"66b78ca02d5c3d7771334037"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,154 @@
+{
+	"info": {
+		"_postman_id": "415faf91-294c-4d66-87b8-8e4ee07762b2",
+		"name": "Sucursales",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10585618",
+		"_collection_link": "https://warped-water-751824.postman.co/workspace/Test_Nequi~1492f27a-e4a0-4a7f-a050-2847fd236ecb/collection/10585618-415faf91-294c-4d66-87b8-8e4ee07762b2?action=share&source=collection_link&creator=10585618"
+	},
+	"item": [
+		{
+			"name": "1.Consultar sucursales por id franquicia",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/sucursales/franquicia/66b78ca02d5c3d7771334037",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"sucursales",
+						"franquicia",
+						"66b78ca02d5c3d7771334037"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2.Obtener sucursal por id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/sucursales/66b78d36870466c4ab7a3905",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"sucursales",
+						"66b78d36870466c4ab7a3905"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "3.Añadir_Sucursal_a_Franquicia",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Sucursal Oriental\",\r\n    \"direccion\": \"Plaza Oriental, Ciudad H\",\r\n    \"franquiciaId\": \"66b78ca02d5c3d7771334037\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/sucursales?franquiciaId=66b7ad1c241b0e10a8e27b77",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"sucursales"
+					],
+					"query": [
+						{
+							"key": "franquiciaId",
+							"value": "66b7ad1c241b0e10a8e27b77"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "4.Actualizar Sucursal",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Sucursal Centro Sur\",\r\n    \"direccion\": \"Plaza Central, Ciudad A\",\r\n    \"franquiciaId\": \"66b78ca02d5c3d7771334037\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/sucursales/66b78d36870466c4ab7a3905",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"sucursales",
+						"66b78d36870466c4ab7a3905"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "5.Eliminar sucursal",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/sucursales/66b7bd729405573601d514be",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"sucursales",
+						"66b7bd729405573601d514be"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "6.Obtener sucursales",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/sucursales",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"sucursales"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

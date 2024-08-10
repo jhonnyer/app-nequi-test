@@ -1,0 +1,5 @@
+Ejecutar el aplicativo en Dockers:
+
+* docker build -t app-nequi:latest .
+* docker run --name app-nequi --link mongodb:mongo -p 8080:8080 app-nequi:latest
+

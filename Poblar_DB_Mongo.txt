@@ -1,0 +1,76 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+FRANQUICIAS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+db.franquicias.insertMany([
+    {
+        nombre: "Franquicia Alpha",
+        direccion: "Calle 123, Ciudad A"
+    },
+    {
+        nombre: "Franquicia Beta",
+        direccion: "Avenida 456, Ciudad B"
+    }
+]);
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+SUCURSALES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+db.sucursales.insertMany([
+    {
+        nombre: "Sucursal Centro",
+        direccion: "Plaza Central, Ciudad A",
+        franquiciaId: ObjectId("66b78ca02d5c3d7771334037")
+    },
+    {
+        nombre: "Sucursal Norte",
+        direccion: "Barrio Norte, Ciudad A",
+        franquiciaId: ObjectId("66b78ca02d5c3d7771334037")
+    },
+    {
+        nombre: "Sucursal Sur",
+        direccion: "Centro Sur, Ciudad B",
+        franquiciaId: ObjectId("66b78ca02d5c3d7771334038")
+    }
+]);
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+PRODUCTOS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+db.productos.insertMany([
+    {
+        nombre: "Camiseta",
+        stock: 50,
+        sucursalId: ObjectId("66b78d36870466c4ab7a3905")
+    },
+    {
+        nombre: "Jeans",
+        stock: 30,
+        sucursalId: ObjectId("66b78d36870466c4ab7a3905")
+    },
+    {
+        nombre: "Chaqueta",
+        stock: 20,
+        sucursalId: ObjectId("66b78d36870466c4ab7a3906")
+    },
+    {
+        nombre: "Zapatos",
+        stock: 15,
+        sucursalId: ObjectId("66b78d36870466c4ab7a3906")
+    },
+    {
+        nombre: "Televisor",
+        stock: 10,
+        sucursalId: ObjectId("66b78d36870466c4ab7a3907")
+    },
+    {
+        nombre: "Celular",
+        stock: 25,
+        sucursalId: ObjectId("66b78d36870466c4ab7a3907")
+    }
+]);
