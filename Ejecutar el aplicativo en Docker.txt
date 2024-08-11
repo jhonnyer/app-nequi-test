@@ -1,4 +1,4 @@
-Ejecutar el aplicativo en Dockers:
+Ejecutar el aplicativo en Docker. Ejecutar los comandos en la raíz del proyecto ".../app/" donde se encuentra el archivo Dockerfile que contiene las instrucciones para generar el contenedor. 
 
 * docker build -t app-nequi:latest .
 * docker run --name app-nequi --link mongodb:mongo -p 8080:8080 app-nequi:latest
